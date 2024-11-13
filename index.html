@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign-Up-Form</title>
+    <link rel="stylesheet" href="style.css">
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="backgrd">
+                    <img src="odin-lined.png" alt="logo" height="130" width="90">
+                    WELCOME!
+            </div>
+        </div>
+        <div class="right">
+            <div class="top">
+                <p>This is not a real online service!You know you need something <br> this in your life to help you realize your deepest dreams.<br> Sign up now to get started.</p>
+                <p>You know you want to.</p>
+            </div>
+            <div class="form-stuff">
+                <h2>Let's do this!</h2> 
+                <div class="form-container">
+                    <div class="right-left">
+                        <label for="first_name">FIRST NAME</label>
+                        <input type="text" id="first_name" name="first_name" required maxlength="50" placeholder="Ted">
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email"  required placeholder="ted123@gmail.com">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" name="password" maxlength="10" minlength="6" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,10}" required  title="Password must be 6-10 characters long, include at least one uppercase letter, one lowercase letter, and one number.">
+                    </div>
+                    <div class="right-right">
+                        <label for="last_name">LAST NAME</label>
+                        <input type="text" id="last_name" name="last_name" required maxlength="50" placeholder="Mosby">
+                        <label for="Phone">PHONE NUMBER</label>
+                        <input type="tel" id="Phone" name="Phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Phone number format: 123-456-7890" placeholder="123-456-7890" >
+                        <label for="c-password">CONFIRM PASSWORD</label>
+                        <input type="password" id="c-password" name="c-password" required minlength="6" maxlength="10">
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <button type="button"> Create Account</button>
+                <p class="foot">Already have an account? <span> <a href="">Log in</a></span></p>
+            </div>
+        </div>
+    </div>
+</body>
+</head>
+</html>
