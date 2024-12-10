@@ -19,7 +19,7 @@ body {
 .left{
     height:100%;
     width: 33%;
-    background: url(./brown.jpg);
+    background: url(Images/brown.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
